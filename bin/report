@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+ROOT_PATH = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+$LOAD_PATH.unshift(File.join(ROOT_PATH, 'lib'))
+
+require 'bundler/setup'
+# class Report < Thor
+#   FORMATS = %{json ,csv, xls}
+#
+#   option :time, required: true, aliases: :t, desc: "Report values begin from a certain time in past."
+#   option :output, required: true, aliases: :o, desc: "export data in a specific format (#{Report::FORMATS})"
+#   #       opts.on("-t", "--time [TIME]", Time, "Report values begin from a certain time in past.")
+#   #       opts.on("-o", "--output", FORMATS, "export data in a specific format (#{FORMATS})")
+#   def run (file = nil)
+#
+#   end
+# end

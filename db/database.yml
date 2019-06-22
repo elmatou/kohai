@@ -1,0 +1,6 @@
+adapter: sqlite
+# host: db/meter.sqlite3
+database: db/meter.sqlite3
+# encoding: unicode
+# username:
+# password:

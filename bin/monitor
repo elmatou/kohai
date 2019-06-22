@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+ROOT_PATH = File.expand_path(File.join(File.dirname(__FILE__), ".."))
+$LOAD_PATH.unshift(File.join(ROOT_PATH, 'lib'))
+
+require 'bundler/setup'
+require 'daemons'
+
+options = {
+  dir: '/..',
+  monitor: true,
+  log_output: true,
+  backtrace: true,
+  log_dir: File.join(ROOT_PATH, 'log'),
+  output_logfilename: "#{File.basename($0)}.output",
+  logfilename: "#{File.basename($0)}.log"
+}
+
+Daemons.run(File.join(ROOT_PATH, 'lib', 'monitor.rb'), options)
