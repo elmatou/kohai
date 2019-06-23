@@ -1,0 +1,5 @@
+
+*.pid
+log/*
+Gemfile.lock
+db/meter.sqlite3

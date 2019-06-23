@@ -16,7 +16,6 @@ Highcharts.chart('puissance', {
     crosshair: true
   },
   yAxis: {
-    crosshair: true,
     labels: { format: '{value} W' },
     title: { text: null }
   },
@@ -37,7 +36,7 @@ Highcharts.chart('puissance', {
     area: { fillOpacity: 0.3 }
   },
   data: {
-    rowsURL: new URL('meter/2/indices', window.location.href).href,
+    rowsURL: new URL('meter/3/indices', window.location.href).href,
     firstRowAsNames: false,
     dataRefreshRate: 20,
     enablePolling: true
